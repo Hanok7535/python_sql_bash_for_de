@@ -1,0 +1,125 @@
+SQL for Data Engineering
+Why SQL for Data Engineering?
+SQL (Structured Query Language) is a fundamental tool for data engineers. It is used for querying and manipulating relational databases, which are at the heart of most data-driven systems. Understanding SQL is crucial for tasks like data retrieval, data transformation, and integration with other tools in the data pipeline.
+
+Key Benefits of SQL for Data Engineering:
+Data Retrieval: SQL is the standard language for querying data stored in relational databases.
+Data Manipulation: SQL allows for filtering, sorting, and aggregating data to derive meaningful insights.
+Scalability: SQL can handle large datasets and complex queries with efficiency.
+Integration: SQL is widely used across the data ecosystem, making it a critical skill for interacting with various data systems and tools.
+
+What Will We Cover in SQL for Data Engineering?
+The focus will be on mastering the key concepts and advanced techniques needed for data engineering tasks. Below are the core SQL topics we’ll focus on:
+Core Topics to Cover:
+1. SQL Basics: Basic queries, SELECT statement, WHERE clause, filtering data.
+2. Data Types and Operators: Understanding different data types, comparison operators, and logical operators.
+3. Aggregate Functions: Using functions like COUNT, SUM, AVG, MIN, MAX for data summarization.
+4. Joins: INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL OUTER JOIN.
+5. Subqueries and Nested Queries: Writing complex queries with subqueries.
+6. Group By and Having: Grouping data for aggregation and filtering groups.
+7. Window Functions: Using window functions like ROW_NUMBER, RANK, and others.
+8. Indexes and Performance Optimization: Creating indexes and optimizing queries for performance.
+9. Database Design: Normalization, schema design, and relationships between tables.
+10. Advanced SQL Concepts: Transactions, CTEs (Common Table Expressions), and more.
+
+
+SQL for Data Engineering Breakdown (15 Days)
+Day 1: Introduction to SQL and Setup
+Topics Covered:
+	Introduction to SQL and relational databases
+	Setting up a database environment (e.g., MySQL, PostgreSQL, SQLite)
+	Writing your first SQL query (SELECT statement)
+	Objective: Understand how to work with SQL databases and write simple queries.
+
+Day 2: SQL Basics - SELECT and WHERE
+Topics Covered:
+	Writing SELECT queries
+	Filtering data with the WHERE clause
+	Using logical operators (AND, OR, NOT)
+	Objective: Learn how to retrieve specific data from a database using basic queries.
+
+Day 3: SQL Data Types and Operators
+Topics Covered:
+	Understanding different SQL data types (e.g., INT, VARCHAR, DATE, etc.)
+	Using comparison operators (>, <, =, !=)
+	Using logical operators (AND, OR, NOT)
+	Objective: Learn how to work with different data types and operators to filter data.
+
+Day 4: Aggregate Functions
+Topics Covered:
+	Using COUNT, SUM, AVG, MIN, MAX to summarize data
+	GROUP BY and HAVING clauses for grouping and filtering aggregated results
+	Objective: Learn to summarize data using aggregate functions and group data for better analysis.
+
+Day 5: Joins - INNER JOIN
+Topics Covered:
+	Understanding the concept of joins in SQL
+	Writing INNER JOIN queries to combine data from multiple tables
+	Objective: Learn how to use INNER JOIN to retrieve data from related tables.
+
+Day 6: Joins - LEFT JOIN, RIGHT JOIN
+Topics Covered:
+	Writing LEFT JOIN queries to include unmatched rows from the left table
+	Writing RIGHT JOIN queries to include unmatched rows from the right table
+	Objective: Understand the difference between LEFT JOIN and RIGHT JOIN and how to use them.
+
+Day 7: Joins - FULL OUTER JOIN
+Topics Covered:
+	Writing FULL OUTER JOIN queries to retrieve unmatched rows from both tables
+	Combining FULL OUTER JOIN with WHERE and GROUP BY
+	Objective: Master FULL OUTER JOIN to combine all data, including unmatched rows.
+
+Day 8: Subqueries and Nested Queries
+Topics Covered:
+	Writing subqueries for complex queries
+	Using subqueries in SELECT, WHERE, and FROM clauses
+	Objective: Learn how to write and optimize nested queries for data retrieval.
+
+Day 9: Group By and Having
+Topics Covered:
+	Using GROUP BY to aggregate data by groups
+	Filtering groups with the HAVING clause
+	Objective: Understand how to group data and filter results after aggregation.
+
+Day 10: Window Functions - Introduction
+Topics Covered:
+	Introduction to window functions and their use cases
+	Using ROW_NUMBER, RANK, DENSE_RANK, and NTILE functions
+	Objective: Learn how to use window functions to analyze data across a set of rows.
+
+Day 11: Advanced Window Functions
+Topics Covered:
+	Using SUM, AVG, and other aggregate functions as window functions
+	Working with partitioning and ordering in window functions
+	Objective: Dive deeper into advanced window functions and their applications in data analysis.
+
+Day 12: Indexing and Query Optimization
+Topics Covered:
+	Creating and managing indexes to improve query performance
+	Using EXPLAIN plans to optimize queries
+	Objective: Understand how to optimize queries and speed up data retrieval using indexing.
+
+Day 13: Database Design - Normalization and Relationships
+Topics Covered:
+	Understanding database normalization (1NF, 2NF, 3NF)
+	Designing relational databases and relationships between tables (1:1, 1:M, M:M)
+	Objective: Learn how to design normalized databases and define relationships between tables.
+
+Day 14: Transactions and ACID Properties
+Topics Covered:
+	Understanding transactions and their importance in SQL
+	ACID properties: Atomicity, Consistency, Isolation, Durability
+	COMMIT, ROLLBACK, and SAVEPOINT
+	Objective: Master the concepts of transactions and ensure data integrity using ACID properties.
+
+Day 15: Advanced SQL - CTEs and Recursive Queries
+Topics Covered:
+	Writing Common Table Expressions (CTEs)
+	Working with recursive queries to handle hierarchical data
+	Objective: Learn how to use CTEs and recursive queries for complex data analysis tasks.
+
+Tools and Libraries Needed:
+SQL Server: MySQL, PostgreSQL, or SQLite.
+SQLAlchemy: Python library for database interaction.
+PostgreSQL/MySQL Workbench: For database administration
+DBVisualizer: For querying databases visually.

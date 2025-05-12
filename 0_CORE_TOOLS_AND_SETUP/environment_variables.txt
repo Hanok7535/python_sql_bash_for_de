@@ -1,0 +1,87 @@
+Environment Variables
+
+These are key-value pairs stored by your operating system that define how software behaves. They're used to configure system paths, authentication secrets, and runtime settings — crucial for scripting, automation, Python environments, and data engineering workflows.
+
+
+
+1. What Are Environment Variables?
+They are global variables your OS uses to pass configuration information to applications.
+
+For example: PATH — tells your shell where to look for installed programs
+	     HOME / USERPROFILE — points to your home directory
+   	     PYTHONPATH — tells Python where to look for modules
+
+
+2. Viewing Environment Variables
+In Windows (CMD / PowerShell):
+echo %PATH% (CMD)
+$Env:PATH (POWERSHELL)
+
+In Git Bash / Linux / macOS:
+echo $PATH (BASH)
+
+
+
+3. Setting Environment Variables
+
+Temporarily(Session Only):
+
+Shell				Command
+Windows CMD			set VAR_NAME=value
+PowerShell			$Env:VAR_NAME = "value"
+Bash/Linux/macOS		export VAR_NAME=value
+
+
+Permanently:
+
+OS				How
+Windows				System Properties > Environment Variables (GUI)
+macOS/Linux			Add export VAR=value to ~/.bashrc or ~/.zshrc
+
+
+
+4. Common Useful Environment Variables
+
+Name		Purpose								Example
+PATH		Tells OS where to look for executables				Add Python, Git, Java, etc. to this
+HOME		Points to your user directory					/home/hanok or C:\Users\Hanok
+PYTHONPATH	Python module search path					Useful for custom modules and packages
+VIRTUAL_ENV	Points to the current Python venv path				Used by virtual environments
+
+
+
+5. Why It Matters in Data Engineering
+
+Tools like Airflow, Spark, Docker, Hadoop use env variables for configuration.
+Your scripts might need secrets or credentials (like AWS_ACCESS_KEY) stored in env vars instead of hardcoding.
+Local environments often differ from production — env vars allow switching easily.
+
+
+6. Using in Python and Bash Scripts
+
+In Python:
+
+import os
+api_key = os.getenv("API_KEY")
+print(api_key)
+
+In Shell:
+
+#!/bin/bash
+echo "Your key is: $API_KEY"
+
+
+
+7. Pro Tips
+
+Use .env files with dotenv in Python projects.
+
+# .env(BASH)
+DB_HOST=localhost
+DB_PORT=5432
+
+from dotenv import load_dotenv   (PYTHON)
+load_dotenv()
+
+Never expose sensitive values (API keys, DB credentials) in code. Use environment variables or secrets managers.
+

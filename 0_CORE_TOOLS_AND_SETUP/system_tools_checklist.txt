@@ -1,0 +1,100 @@
+System Tools Checklist for Data Engineering Setup
+A complete checklist of system-level tools and utilities you should install and be familiar with before diving into full-stack data engineering or dev workflows.
+
+
+
+1. Core CLI Tools
+
+Tool				Purpose
+Git				Version control
+Python				Core language
+pip / pip3			Python package manager
+curl / wget			Data/file download from terminals
+unzip / tar			File extraction tools
+tree				Directory structure visualization
+grep / find / awk / sed		File/text searching
+vim / nano			Terminal-based file editing
+make				Automating build/compile steps (used rarely, but seen in repos)
+
+
+
+2. GitHub Integration
+
+[ ] GitHub account
+[ ] SSH key setup with GitHub
+[ ] GitHub CLI (optional but handy)
+
+# Install GitHub CLI
+brew install gh         # macOS
+sudo apt install gh     # Linux
+
+
+3. Python Environment Tools
+
+[ ] virtualenv or venv
+[ ] pyenv (optional, for version switching)
+[ ] pipenv or poetry (optional, for project management)
+[ ] jupyterlab or notebook
+
+
+
+4. Editor/IDE Setup
+
+Tool				Use
+
+VS Code				Main editor for scripting, notebooks, and Git integration
+Extensions to install		Python, Jupyter, GitLens, Remote-SSH, Markdown Preview
+
+
+
+5. Terminal Enhancements (Optional but Useful)
+
+Tool				Use
+Oh My Zsh			Enhanced terminal interface (macOS/Linux)
+Powerlevel10k			Theme for zsh
+Starship Prompt			Cross-shell prompt for speed and style
+tmux				Terminal multiplexer
+fzf				Fuzzy finder for command history/files
+bat				Enhanced cat command with syntax highlighting
+
+
+
+6. System Monitoring / Utilities
+
+Tool	Use
+htop	Process viewer
+ncdu	Disk usage
+lsof	List open files
+netstat / ss	Network connections
+
+
+
+---
+
+7. Data Engineering Pre-requisites to Check
+
+Task							Status
+Python 3.8+ installed					✅
+Git installed and configured				✅
+GitHub SSH connected					✅
+VS Code set up with Python				✅
+Terminal navigation (bash or zsh)			✅
+Familiarity with pip, venv, requirements.txt		✅
+Ability to push/pull to GitHub				✅
+Knows how to edit/run files via terminal		✅
+
+
+
+---
+
+8. Bonus DevOps/Backend Tools to Be Aware Of
+
+Tool							When It Becomes Important
+
+Docker							For containerized data pipelines
+Ansible							When automating setups
+Terraform						Infrastructure provisioning
+PostgreSQL/MySQL CLI					When working directly with DBs
+Kafka CLI						For real-time streaming tools
+Airflow CLI						When scheduling pipelines
+

@@ -1,0 +1,182 @@
+What is Git?
+
+Git is a version control system that tracks changes to your code over time. It lets you collaborate, revert to previous states, and manage different versions of your projects efficiently.
+
+You interact with Git using the terminal (usually Git Bash on Windows or a Terminal on macOS/Linux).
+
+
+1. git init
+
+What it does: Initializes a new Git repository in your current folder.
+
+When to use: When you’re starting a new project and want to track it with Git.
+
+Where to type: Open Git Bash, navigate to your project folder, and type:
+
+git init
+
+What happens: A hidden .git folder is created, which stores all version history.
+
+
+
+---
+
+2. git clone <repository-url>
+
+What it does: Creates a copy of an existing Git repository on your machine.
+
+When to use: When you want to download a project from GitHub or a remote Git repository.
+
+Where to type: In Git Bash or Terminal, go to the folder where you want to store the repo and run:
+
+git clone https://github.com/user/repo-name.git
+
+What happens: It creates a folder with the project files and the .git history.
+
+
+
+---
+
+3. git status
+
+What it does: Shows the current state of your working directory — which files are modified, staged, or untracked.
+
+When to use: After making changes, to check what Git sees as new or changed.
+
+Where to type:
+
+git status
+
+What it shows:
+
+Untracked files (not added to Git yet)
+
+Modified files (changed but not yet staged)
+
+Staged files (ready to be committed)
+
+
+
+
+---
+
+4. git add <filename>
+
+What it does: Moves the file(s) into the staging area, telling Git: “I want to track these changes.”
+
+When to use: After editing or creating files, and before committing.
+
+Examples:
+
+git add my_script.py
+git add .   
+
+
+---
+
+5. git commit -m "your message"
+
+What it does: Saves the staged changes to the Git history with a message.
+
+When to use: After staging changes, and you're ready to record a checkpoint in the project.
+
+Where to type:
+
+git commit -m "Initial data loading script"
+
+
+
+---
+
+6. git log
+
+What it does: Displays the commit history.
+
+When to use: To review previous changes, authors, dates, and commit messages.
+
+Command:
+
+git log
+
+
+
+---
+
+7. git remote add origin <url>
+
+What it does: Connects your local Git repo to a remote GitHub repo (called origin).
+
+When to use: After git init, when you want to push to GitHub for the first time.
+
+Command:
+
+git remote add origin https://github.com/yourusername/repo.git
+
+
+
+---
+
+8. git push -u origin main
+
+What it does: Pushes your local commits to the remote main branch on GitHub.
+
+When to use: After committing, to sync your code with the online repo.
+
+Command:
+
+git push -u origin main
+
+
+
+---
+
+9. git pull
+
+What it does: Pulls the latest changes from the remote repository into your local machine.
+
+When to use: Before you start working or to get updates from teammates.
+
+Command:
+
+git pull
+
+
+
+---
+
+10. git branch and git checkout -b <branch>
+
+git branch: Lists branches.
+
+git checkout -b feature-x: Creates and switches to a new branch.
+
+Use case: You want to make changes without affecting the main project.
+
+
+
+---
+
+11. .gitignore File
+
+What it does: Tells Git which files/folders to ignore (e.g., __pycache__, .env).
+
+When to use: Always, to avoid tracking unnecessary files.
+
+Example .gitignore:
+__pycache__/
+*.log
+.env
+
+
+
+---
+
+12. Other Useful Commands
+
+git diff: See what changes were made before staging.
+
+git reset: Unstage files.
+
+git stash: Temporarily save changes you don’t want to commit yet.
+
+

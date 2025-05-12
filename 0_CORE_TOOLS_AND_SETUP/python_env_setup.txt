@@ -1,0 +1,122 @@
+Python Environment Setup
+This setup ensures that every Python project has its own isolated environment with the right packages, paths, and Python version — crucial for clean, reproducible, and conflict-free workflows in data engineering and scripting.
+
+
+
+1. Why You Need a Virtual Environment:
+Prevents dependency conflicts across projects
+Keeps your base system Python clean
+Allows easier testing, upgrades, and project isolation
+
+
+2. Installing Python
+Windows / macOS:
+Go to https://www.python.org/downloads
+Download the latest version (usually Python 3.x)
+
+During installation:
+Check: “Add Python to PATH”
+Proceed with installation
+
+Linux:
+sudo apt update
+sudo apt install python3 python3-pip
+
+
+
+3. Creating Virtual Environments
+There are two main tools:
+
+A.(BASH) venv (built-in with Python 3.3+)
+# Create
+python -m venv env
+
+# Activate
+# Windows CMD
+env\Scripts\activate
+
+# Windows PowerShell
+.\env\Scripts\Activate.ps1
+
+# Git Bash / Linux / macOS
+source env/bin/activate
+
+# Deactivate
+deactivate
+
+B. virtualenv (if you want advanced control)(BASH)
+pip install virtualenv
+virtualenv env
+source env/bin/activate
+
+
+
+
+4. Installing Packages
+
+Once the environment is activated:
+pip install pandas numpy requests
+
+Save them for future reference:
+pip freeze > requirements.txt
+
+To install them again:
+pip install -r requirements.txt
+
+
+
+5. Managing Python Versions with pyenv (Linux/macOS)
+
+curl https://pyenv.run | bash
+# Add to ~/.bashrc or ~/.zshrc
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv virtualenv-init -)"
+
+Install and use Python version:
+pyenv install 3.10.6
+pyenv global 3.10.6
+
+
+---
+
+6. Jupyter + Venv Integration
+
+After activating your venv:
+
+pip install notebook ipykernel
+python -m ipykernel install --user --name=myenv --display-name "Python (myenv)"
+
+
+
+7. VS Code Integration
+
+Open Command Palette (Ctrl+Shift+P)
+Search: Python: Select Interpreter
+Choose your env interpreter path
+
+
+To auto-activate on terminal open:
+// In settings.json
+"python.terminal.activateEnvironment": true
+
+
+
+
+8. Clean Up
+
+To delete an environment:
+
+# Simply delete the folder
+rm -rf env  # or manually delete in Explorer
+
+
+---
+
+Final Tips:
+
+Always activate venv before coding
+Use different envs for different projects
+Version-lock your dependencies with requirements.txt
+Use .env files and python-dotenv for secrets
+

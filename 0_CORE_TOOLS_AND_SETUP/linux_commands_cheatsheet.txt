@@ -1,0 +1,126 @@
+Linux Commands – Quick Reference Cheat Sheet
+
+A handy guide to frequently used Linux/Unix shell commands. Learn these by heart for data engineering, scripting, and navigating remote systems.
+
+
+1. Basic Navigation
+
+Command					Description
+pwd					Print current working directory
+ls					List files and directories
+ls -l					Long listing format
+ls -a					Show hidden files
+cd foldername				Change directory
+cd ..					Go up one level
+cd ~					Go to home directory
+
+
+2. File & Directory Operations
+
+Command					Description
+mkdir foldername			Create new directory
+touch file.txt				Create new empty file
+cp source.txt dest.txt			Copy file
+mv oldname.txt newname.txt		Rename or move file
+rm file.txt				Delete file
+rm -r foldername			Delete folder and contents
+cat file.txt				View contents of file
+nano file.txt				Open file in nano editor
+vim file.txt				Open file in Vim
+head file.txt				View first 10 lines
+tail file.txt				View last 10 lines
+
+
+
+3. File Searching
+
+Command					Description
+find . -name "filename"			Search for a file
+grep "text" file.txt			Search text inside a file
+grep -r "text" .			Recursively search text in current folder
+
+
+
+4. Permissions
+
+Command					Description
+chmod +x script.sh			Make script executable
+chmod 755 file				Set read/write/execute permissions
+chown user:group file			Change file owner
+
+
+
+5. File Compression
+
+Command					Description
+tar -cvf archive.tar file		Create tar archive
+tar -xvf archive.tar			Extract tar archive
+zip archive.zip file			Create zip archive
+unzip archive.zip			Extract zip file
+
+
+
+6. System Info & Processes
+
+Command					Description
+top or htop				Live system process viewer
+ps aux					See running processes
+kill PID				Kill process by ID
+df -h					Disk usage (human readable)
+du -sh folder				Size of folder
+free -m					RAM usage in MB
+
+
+7. Networking
+Command					Description
+ping google.com				Check network connectivity
+curl ifconfig.me			Get your public IP
+netstat -tulnp				List open ports and services
+scp file user@host:/path		Secure copy to remote
+ssh user@ip				Connect to remote server
+
+
+
+8. Package Management
+
+Ubuntu / Debian:
+sudo apt update
+sudo apt install <package>
+sudo apt remove <package>
+
+Red Hat / CentOS:
+sudo yum update
+sudo yum install <package>
+
+macOS (with Homebrew):
+brew install <package>
+
+
+---
+
+9. Helpful Shortcuts
+
+Shortcut				Action
+Ctrl + C				Cancel running command
+Ctrl + D				Logout from terminal
+Ctrl + L				Clear screen
+Tab					Auto-complete command or filename
+!!					Repeat last command
+history					Show command history
+!n					Run command number n from history
+
+
+10. Scripting Essentials (Bash)
+
+#!/bin/bash
+
+echo "Hello, $USER"
+date
+
+Make it executable:
+chmod +x script.sh
+
+Run it:
+./script.sh
+
+

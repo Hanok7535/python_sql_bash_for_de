@@ -1,0 +1,87 @@
+What is Git Bash / Terminal?
+
+A command-line interface that lets you interact with your system using text commands.
+
+Git Bash is used on Windows to run Unix-style commands.
+Terminal is used on macOS/Linux for the same purpose.
+
+
+1. OPENING GIT BASH / TERMINAL
+
+Windows: Open Git Bash from Start Menu.
+Mac/Linux: Use the Terminal app.
+
+
+2. BASIC COMMANDS TO NAVIGATE DIRECTORIES
+
+Command			What it does						Example
+pwd			Shows current working directory				pwd
+ls			Lists files in current directory			ls
+ls -la			Lists files including hidden ones, with details		ls -la
+cd folder_name/		Enters the specified folder				cd projects/
+cd ..			Moves back to parent folder				cd ..
+cd ~			Goes to home directory					cd ~
+
+
+
+3. FILE AND FOLDER OPERATIONS
+
+Command			What it does						Example
+
+mkdir folder_name	Creates a new folder					mkdir data_files
+touch file.txt		Creates a new empty file				touch notes.txt
+echo "text" > file.txt	Writes text into file					echo "hello" > hello.txt
+cat file.txt		Displays contents of a file				cat hello.txt
+rm file.txt		Deletes a file						rm old.txt
+rm -r folder_name	Deletes a folder and its contents			rm -r data_files
+clear			Clears the terminal screen				clear
+
+
+4. RUNNING PYTHON / SHELL SCRIPTS
+
+Python script: python script.py
+Shell script: bash script.sh
+
+You must be inside the directory where the file exists or provide the full path.
+
+
+5. GIT BASH VS CMD VS POWERSHELL
+
+Tool				Strength
+Git Bash			Best for Git + Unix-style workflows
+CMD				Windows-only, limited
+PowerShell			Windows scripting with advanced features
+
+Use Git Bash or Terminal for all Git & DE-related work unless OS-specific.
+
+
+
+6. SHORTCUTS AND TIPS
+
+Shortcut			What it does
+
+TAB				Autocomplete file/folder names
+Ctrl + C			Cancel a running command
+Ctrl + L			Clear screen (similar to clear)
+Up / Down Arrow			Browse through previous commands
+Ctrl + Shift + V		Paste in Git Bash
+Ctrl + R			Search through command history
+
+
+7. CHECKING CURRENT FOLDER CONTENT IN VISUAL FILE EXPLORER
+You can open current folder in file explorer:   explorer .
+
+
+8. CHECK PYTHON / GIT / BASH VERSIONS
+
+Command				Purpose
+python --version		Check Python installed
+git --version			Check Git installed
+bash --version			Check Bash version
+
+
+9. EXTRA: OPENING A FILE IN VS CODE
+If you have VS Code installed and set in your PATH: code .
+This opens the current directory in VS Code.
+
+

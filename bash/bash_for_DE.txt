@@ -1,0 +1,126 @@
+Bash for Data Engineering
+Why Bash for Data Engineering?
+Bash is a powerful shell scripting language used for automating tasks in the Unix/Linux environment. In data engineering, Bash is often used for automating workflows, managing files, processing data, and integrating with databases and APIs.
+
+Key Benefits:
+Simplicity & Speed: Bash scripts are efficient for automating system tasks and file operations.
+Versatile Integration: Easily integrates with other tools and languages, often used in data pipelines.
+Text Processing: Bash is well-suited for data extraction, manipulation, and transformation in the form of log files, CSVs.
+
+Bash for Data Engineering Breakdown (15 Days)
+Day 1: Introduction to Bash and Setup
+Topics Covered:
+	Installing Bash and setting up the terminal (Linux/Mac/Windows Subsystem for Linux)
+	Basic commands in the terminal (ls, cd, pwd, echo, etc.)
+	Navigating and managing files and directories
+	Objective: Understanding the Bash environment and basic terminal navigation.
+
+Day 2: Variables and Data Types
+Topics Covered:
+	Defining variables (VAR=value)
+	Working with strings, integers, and arrays
+	Performing basic arithmetic with Bash
+	Data type conversion in Bash
+	Objective: Learn to create and manage variables and understand Bash data types.
+
+Day 3: Control Flow - Conditionals
+Topics Covered:
+	if, else, elif statements
+	Logical operators (&&, ||, !)
+	Comparison operators for strings and integers
+	Using test and [[ ]] for condition checking
+	Objective: Implement decision-making logic in scripts based on conditions.
+
+Day 4: Control Flow - Loops
+Topics Covered:
+	for, while, and until loops
+	Loop control (break, continue, exit)
+	Iterating through lists and file contents
+	Objective: Automate repetitive tasks and iterate over collections of data.
+
+Day 5: Functions in Bash
+Topics Covered:
+	Defining functions in Bash (function_name() { ... })
+	Passing arguments to functions
+	Return values and exit codes
+	Scope and variable access in functions
+	Objective: Organize and modularize code with reusable functions.
+
+Day 6: File Handling
+Topics Covered:
+	Reading and writing text to files (cat, echo, >>, >)
+	File redirection and piping (|)
+	Handling input and output streams
+	Working with file permissions and ownership
+	Objective: Learn to manipulate files directly within Bash scripts.
+
+Day 7: Regular Expressions and Text Processing
+Topics Covered:
+	Using grep, sed, awk for text searching and manipulation
+	Regular expressions for pattern matching
+	Substitution and text extraction
+	Objective: Master text processing tools essential for handling large datasets or logs.
+
+Day 8: Error Handling and Debugging
+Topics Covered:
+	Error handling with exit codes
+	Using set -e for automatic error handling
+	Debugging Bash scripts with set -x and echo statements
+	Objective: Writing robust scripts that handle errors gracefully.
+
+Day 9: File I/O with CSV and Logs
+Topics Covered:
+	Reading and writing CSV files using Bash
+	Processing CSV data with awk and cut
+	Managing log files and extracting useful information
+	Objective: Working with structured data in CSV format, commonly used in data engineering workflows.
+
+Day 10: String Manipulation and Pattern Matching
+Topics Covered:
+	Extracting substrings using parameter expansion (${string:start:length})
+	Replacing strings and trimming spaces
+	Matching patterns with [[ =~ ]] and grep
+	Objective: Advanced string manipulation techniques to handle data more effectively.
+
+Day 11: Scheduling and Automation
+Topics Covered:
+	Automating tasks with cron jobs
+	Understanding crontab syntax for scheduling scripts
+	Using at for one-time tasks
+	Objective: Automating repetitive tasks, such as data backups or periodic script executions.
+
+Day 12: Bash for Database Interaction
+Topics Covered:
+	Connecting to SQL databases from the command line using mysql, psql, etc.
+	Executing SQL queries from Bash scripts
+	Automating database backups and transfers
+	Objective: Integrating Bash with databases for automated data processing and management.
+
+Day 13: APIs and Web Interaction
+Topics Covered:
+	Using curl to make API requests (GET, POST)
+	Working with JSON data
+	Parsing API responses with jq (JSON parsing)
+	Objective: Interacting with APIs and extracting data programmatically.
+
+Day 14: Data Pipelines and Process Automation
+Topics Covered:
+	Creating simple data pipelines using Bash scripts
+	Automating ETL tasks (Extract, Transform, Load)
+	Running multiple scripts in sequence with proper error checking
+	Objective: Build end-to-end data pipelines for tasks like data extraction and processing.
+
+Day 15: Advanced Bash Scripting Techniques
+Topics Covered:
+	Writing more complex scripts with loops, conditionals, and functions
+	Using trap for clean-up operations
+	Managing environment variables and script parameters
+	Objective: Master advanced Bash scripting for high-level data engineering tasks.
+
+Tools and Libraries Needed:
+Bash: The shell and scripting environment.
+awk, sed, grep: Text processing and manipulation.
+curl: For making API requests.
+jq: Parsing JSON data in Bash.
+cron: Automating tasks with cron jobs.
+SQL: For database interactions.

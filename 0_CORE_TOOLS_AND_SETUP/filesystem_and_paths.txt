@@ -1,0 +1,79 @@
+File Systems and Paths
+
+1. What Is a File System?
+
+A file system is the way your OS (Windows, Linux, macOS) organizes and stores data on disks.
+Think of it like a giant folder tree: The top level is usually the root (C:\ in Windows, / in Linux).Beneath it are folders and subfolders. Inside folders are files
+
+
+
+2. Types of Paths
+
+a. Absolute Path: Full path from root to the file/folder . Always starts from root
+Examples:
+Windows: C:\Users\Hanok\Documents\project\data.csv
+Linux/Mac: /home/hanok/Documents/project/data.csv
+
+
+b. Relative Path: Path relative to the current working directory (CWD). Useful in scripting and portability
+Examples:
+./data.csv (current directory)
+../project/data.csv (go up one folder)
+
+
+
+3. Navigation Commands (Cross-Shell Examples)
+
+Action		Windows(CMD/PowerShell)		GitBash/Linux/macOS
+
+Go to folder	cd foldername			cd foldername
+Up one level	cd ..				cd ..
+Show path	cd				pwd
+List files	dir				ls
+Go to root	cd \				cd /
+
+
+
+
+4. Special Path Symbols
+
+Symbol		Meaning					Example
+
+.		Current directory			./script.sh
+..		Parent directory (go up)		../data.csv
+~		Home directory (Linux/macOS/Bash)	cd ~/Documents
+/ or \		Folder separator (OS-specific)		C:\Users\Hanok or /usr/bin
+Windows uses backslashes \. Linux/macOS use forward slashes /.
+
+
+
+5. Best Practices for Paths in Scripts
+
+Avoid hardcoding absolute paths. Use relative paths for portability.
+
+In Python, always use os.path.join() or pathlib for cross-platform compatibility:
+import os
+path = os.path.join("data", "file.csv")
+
+In shell scripts:
+FILE="./data/sample.csv"
+cat "$FILE"
+
+
+6. Windows File System vs Linux File System (Quick Comparison)
+
+Feature			Windows			Linux/macOS
+
+Root Directory		C:\, D:\		/
+Home Folder		C:\Users\Hanok\		/home/hanok/
+Path Separator		\			/
+Case Sensitivity	No (mostly)		Yes
+File Permissions	Simplified (ACL)	Strict (rwx)
+
+
+
+7. Why This Matters in Data Engineering
+
+Scripts will break if you mess up path references.
+ETL jobs, config files, data pipelines rely heavily on correctly handling file systems.
+Understanding relative vs. absolute and cross-platform compatibility saves hours of debugging.

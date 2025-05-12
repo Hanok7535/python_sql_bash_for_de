@@ -1,0 +1,134 @@
+CMD vs Terminal vs PowerShell
+
+1. CMD (Command Prompt)
+
+What It Is:
+A legacy Windows command-line interpreter. It executes .bat (batch) files and basic Windows shell commands.
+
+How to Open:
+Press Windows + R, type cmd, hit Enter Or search “Command Prompt” in Start.
+
+
+
+Typical Usage:
+
+Navigating Windows folders 
+Running basic commands (dir, cd, echo)
+Executing .bat scripts
+Running Python and Git commands (though limited)
+
+
+Limitations:
+Old interface and functionality
+Doesn’t support modern scripting or Linux-style commands
+No support for piping objects (only text)
+
+
+Example Commands:
+cd Documents\project
+dir
+python script.py
+git status
+
+When to Use:
+Very basic command-line usage
+When you're doing simple folder navigation or file manipulation on Windows
+
+
+
+2. PowerShell
+
+What It Is:
+A modern and powerful shell developed by Microsoft.
+It supports full scripting, object-oriented command output, and advanced automation.
+
+How to Open:
+Search “PowerShell” in Start Or use Windows Terminal and open a PowerShell tab
+
+
+Strengths:
+
+Supports .ps1 scripts
+Allows you to pipe entire objects (not just text)
+Can run CMD commands and integrate with Windows API
+Ideal for automation of Windows systems and DevOps tasks
+
+
+Example Commands:
+Get-ChildItem
+Set-Location C:\Users\YourName
+Get-Process | Where-Object {$_.CPU -gt 100}
+
+When to Use:
+When automating Windows tasks (e.g., scheduled backups)
+When you need scripting beyond what CMD offers
+For interacting with Windows services, registries, or applications
+
+
+
+3. Terminal (General Concept)
+
+What It Is:
+A terminal is just the interface/window that runs shells like CMD, PowerShell, Git Bash, etc.
+Think of it like a "container" or "shell runner".
+
+On Windows:
+Windows Terminal is the modern terminal app.
+You can run CMD, PowerShell, Git Bash, or Ubuntu WSL inside it.
+
+
+Why Important:
+Makes it easy to work with multiple tabs (Git Bash + PowerShell + CMD together)
+More customization (fonts, colors, keybindings)
+Unified interface for all shells
+
+
+Example Setup:
+
+Tab 1: Git Bash for scripting
+Tab 2: PowerShell for admin tasks
+Tab 3: CMD for Python file testing
+
+
+
+4. Git Bash
+
+Just to Revisit Briefly:
+A Linux-style Bash shell for Windows
+Used for scripting and Git commands
+Comes bundled with Git installation
+Very helpful for practicing shell scripting for data workflows
+
+
+
+5. Summary Table: When to Use What
+
+Task					CMD	PowerShell	Git Bash
+
+Basic Windows navigation		Yes	Yes		Yes
+Run Python scripts			Yes	Yes		Yes
+Git commands				Yes	Yes		Best
+Bash scripting				No	No		Yes
+Linux-like commands			No	Limited		Yes
+Automation / scripting			Basic	Powerful	Yes (Linux-style)
+File system admin			Okay	Excellent	Okay
+Real-world DE usage			Rare	Rare		Preferred
+
+
+
+6. Personal Recommendation (for Data Engineering)
+
+Use Git Bash for:
+Bash scripting, Git operations, Practicing Linux-style navigation
+
+
+Use PowerShell for:
+Windows admin tasks, Automating Windows-based setups
+
+
+Use CMD only if:
+You need quick, simple commands Or troubleshooting something old
+
+
+Use Windows Terminal as your hub: Open Git Bash, PowerShell, and CMD all in one interface
+
