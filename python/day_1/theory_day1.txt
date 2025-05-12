@@ -1,0 +1,99 @@
+What is Python?
+Python is a high-level, interpreted, general-purpose programming language.
+Created by Guido van Rossum and first released in 1991.
+Known for its readability, simplicity, and versatility
+Used in web development, data science, automation, AI/ML, scripting, and more.
+
+Key Features of Python:
+Easy to learn and use
+Open-source and free
+Interpreted Language: No need to compile before running.
+Dynamically Typed: No need to declare variable types.
+Extensive libraries: NumPy, Pandas, Matplotlib, TensorFlow, etc.
+Portable: Runs on Windows, macOS, Linux, etc.
+
+Installing Python
+Step-by-Step Guide:
+Go to: https://www.python.org/downloads
+
+Download the latest version of Python for your OS (Windows/macOS/Linux).
+During installation (Windows):
+	Check (tick) "Add Python to PATH"
+	Click "Install Now"
+
+Verifying Installation:
+Open terminal/command prompt:
+python --version
+python3 --version
+
+
+Installing an IDE
+Recommended IDEs:
+IDE			Features
+VS Code			Lightweight, extensible, supports Python well
+Jupyter Notebook	Great for data science, inline output
+PyCharm			Powerful IDE with many features (heavier)
+
+Setting up Python in VS Code:
+Install VS Code from https://code.visualstudio.com/
+
+Install the Python extension in VS Code.
+
+Open a folder → create a new .py file → start coding.
+
+First Python Program
+Writing a simple program:
+
+# This is a comment
+print("Hello, World!")
+
+Running the program:
+In VS Code: Right-click → Run Python File in Terminal.
+
+In Terminal:
+python hello.py
+
+
+Basic Python Syntax:
+Indentation
+Python uses indentation (usually 4 spaces) instead of curly braces:
+
+if 5 > 2:
+    print("Five is greater than two!")
+
+Variables
+name = "Hanok"
+age = 25
+is_student = False
+
+
+Data Types
+Type		Example
+int		10, -5
+float		3.14
+str		"hello"
+bool		True, False
+complex		3 + 4j
+
+
+Comments
+
+# Single line comment
+
+"""
+Multi-line
+comment
+"""
+
+
+Python File Types
+.py → Standard Python script file.
+.ipynb → Jupyter Notebook file (ideal for data science).
+
+Tips for Beginners
+Practice writing small snippets daily.
+Use print() to debug and see outputs.
+Start with basic tasks before jumping into projects.
+Use online platforms like Replit, Jupyter Notebook, or Google Colab if you prefer not to install IDEs.
+
+
