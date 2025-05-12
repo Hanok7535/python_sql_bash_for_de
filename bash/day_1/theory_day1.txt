@@ -1,0 +1,135 @@
+Bash is like your command center. If Python is the brain, Bash is the hands that move files, trigger workflows, and control the environment around your code.
+Before we build data pipelines or automate tasks, we need to feel comfortable operating in a terminal—because this is where engineers live.
+
+
+1. What Is Bash? And Why Should You Care?
+Bash (Bourne Again Shell) is a command-line interpreter—a place where you type commands to interact with the system.
+
+As a data engineer, you’ll use Bash to:
+	Navigate your system and servers
+	Set up folders and files
+	Automate jobs
+	Run scripts
+	Trigger Python, Spark, or SQL scripts
+	Move data between environments
+
+In short: You’ll build trust with your system and become efficient at the backend work that supports data flow.
+
+
+2. How to Get Started (Setup Guide)
+a. Choose Your Terminal
+OS		Recommended Terminal
+Mac		Built-in Terminal
+Linux		Native Terminal
+Windows		Git Bash or WSL (Windows Subsystem for Linux)
+
+
+My Suggestion (Windows): Install Git for Windows – it comes with Git Bash. Or set up WSL – for a full Linux experience.
+
+
+b. How to Test If Bash Is Ready
+Open the terminal and type:
+
+echo "Hello, Bash!"
+
+If it responds with Hello, Bash!, you're good.
+If you get errors like “command not found”, your terminal might not be Bash—try installing Git Bash or WSL.
+
+
+3. Common Setup Issues & Troubleshooting
+
+Problem						Solution
+command not found				You're not in a Bash shell. Try Git Bash / WSL.
+Permission errors (Permission denied)		Use chmod +x to give permission or use sudo on Linux.
+Terminal looks confusing			Stick to Git Bash (Windows) or default terminal (Mac/Linux) for now.
+System path not recognized			Run which python or echo $PATH to check if it's correctly set.
+Can’t find files				Use pwd to know where you are. Use ls to list files.
+
+
+
+4. Bash Mindset – Think Like a Terminal
+
+You don’t click things in Bash—you type commands.
+
+A few key terms to get you grounded:
+Directory = 		Folder
+Path = 			File/folder location (/home/user/projects)
+Home Directory = 	~
+Prompt = 		$ (where you type commands)
+Command = 		Like pwd, ls, cd (you enter this and hit Enter)
+
+
+
+
+5. Core Bash Skills You’ll Master Today
+
+Here’s a complete skill map you’ll walk through. Each section builds your control over the system.
+
+A. Explore & Understand Your Location
+pwd            # Show your current location
+ls             # List files/folders in current directory
+ls -a          # Include hidden files
+ls -l          # Long listing (shows details)
+
+B. Move Around Like a Pro
+cd ~           # Home
+cd /           # Root
+cd ..          # One level up
+cd foldername  # Enter a folder
+
+C. Create Files & Folders
+mkdir new_folder           # Create folder
+mkdir -p path/nested       # Create nested folders
+touch file.txt             # Create empty file
+
+D. View What’s Inside Files
+cat file.txt               # Full content
+head -n 5 file.txt         # First 5 lines
+tail -n 5 file.txt         # Last 5 lines
+
+E. Copy, Move, Rename, Delete
+cp file.txt backup.txt     # Copy
+mv file.txt renamed.txt    # Move or rename
+rm file.txt                # Delete
+
+F. Folder-Level Operations
+rm -r foldername           # Remove folder
+cp -r folder/ newcopy/     # Copy folder
+mv folder1/ folder2/       # Move folder
+
+G. Hidden Files (Config Stuff)
+touch .env                 # Hidden file
+ls -a                      # Show it
+rm .env                    # Remove it
+
+H. Print Text & System Info
+echo "Hello"               # Print text
+whoami                     # Show current user
+date                       # System date/time
+
+I. System Paths & Storage
+which python               # Where Python lives
+df -h                      # Disk usage
+du -sh *                   # Size of each file/folder
+
+J. Terminal Control
+clear                      # Clear terminal
+history                    # Past commands
+man ls                     # Get help (manual)
+
+
+6. How Do You Practice?
+
+Try this:
+1. Open Terminal
+2. Navigate to your Desktop: cd ~/Desktop
+3. Create a project folder: mkdir my_project && cd my_project
+4. Create a file: touch notes.txt
+5. Add something: echo "Day 1 complete" > notes.txt
+6. Check: cat notes.txt
+
+
+
+7. Final Thoughts: Are You Ready?
+If you followed everything here, you’ve officially taken your first step into hands-on system control.
+This isn’t just for Bash—it lays the ground for Git, Python, Docker, Cloud, everything.
